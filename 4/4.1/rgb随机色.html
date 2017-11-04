@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
- <head>
+
+<head>
   <meta charset="UTF-8">
   <meta name="Generator" content="EditPlus®">
   <meta name="Author" content="">
@@ -8,28 +9,33 @@
   <meta name="Description" content="">
   <title>rgb随机生成色</title>
   <style type="text/css">
-  #div1{
-  height:100px;width:100px;margin:10px auto;background:red;
-  }
+    #div1 {
+      height: 100px;
+      width: 100px;
+      margin: 10px auto;
+      background: red;
+    }
   </style>
- <script type="text/javascript">
- function color(){
- var r=parseInt(Math.random()*255);
- var g=parseInt(Math.random()*255);
- var b=parseInt(Math.random()*255);
- var newcolor="rgb("+r+","+g+","+b+")";
- return newcolor;
- }
- window.onload =function (){
- var odiv=document.getElementById('div1');
- setInterval (function (){ 
-	 var c=color();
-	 odiv.style.backgroundColor=c;
- },50);
- }
- </script>
- </head>
- <body>
- <div id="div1"></div> 
- </body>
+  <script type="text/javascript">
+    function color() {
+      var r = parseInt(Math.random() * 255);
+      var g = parseInt(Math.random() * 255);
+      var b = parseInt(Math.random() * 255);
+      var newcolor = "rgb(" + r + "," + g + "," + b + ")";
+      return newcolor;
+    }
+    window.onload = function () {
+      var odiv = document.getElementById('div1');
+      setInterval(function () {
+        var c = color();
+        odiv.style.backgroundColor = c;
+      }, 50);
+    }
+  </script>
+</head>
+
+<body>
+  <div id="div1"></div>
+</body>
+
 </html>
